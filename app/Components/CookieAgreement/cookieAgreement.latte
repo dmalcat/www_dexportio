@@ -1,0 +1,31 @@
+<div class="cookies" id="cookie-agreement-bar">
+	<div class="cookies__row row">
+		<div class="cookies__col cookies__col--message">
+			<p class="cookies__message">{_'Tyto webové stránky používají k poskytování služeb, personalizaci reklam a analýze návštěvnosti soubory cookie. Informace o tom, jak tyto webové stránky používáte, jsou sdíleny se společností Google. Používáním těchto webových stránek souhlasíte s použitím souborů cookie.'}</p>
+		</div>
+		<div class="cookies__col cookies__col--buttons">
+			<a n:href="agree!" class="button button--small button--gray" id="cookie-agreement-button">{_'Souhlasím'}</a>
+		</div>
+	</div>
+</div>
+<script>
+(function() {
+	var xhr = new XMLHttpRequest();
+	xhr.onload = function() {
+		if (xhr.status >= 200 && xhr.status < 300) {
+			var bar = document.getElementById('cookie-agreement-bar');
+			bar.parentNode.removeChild(bar);
+			xhr = null;
+		}
+	};
+	document.getElementById('cookie-agreement-button').addEventListener('click', function(event) {
+		event.preventDefault();
+		if (xhr === null) {
+			return;
+		}
+		xhr.open('GET', this.getAttribute('href'));
+		xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+		xhr.send();
+	})
+})();
+</script>

@@ -1,0 +1,11 @@
+<nav class="navigation">
+	<ul class="navigation__list">
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Homepage:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Homepage:">Homepage</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Styleguide:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Styleguide:">Styleguide</a>
+		</li>
+		<a class="navigation__link" n:href="this, lang => 'sk'">SK</a>
+	</ul>
+</nav>

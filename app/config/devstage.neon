@@ -1,0 +1,15 @@
+parameters:
+
+	database:
+		host: localhost
+		dbname: ''
+		user: ''
+		password: ''
+
+	mail:
+		smtp: true
+		host: ''
+		username: ''
+		password: ''
+		secure: ssl
+		port: 465

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+read -p "Are you sure? [n] " -n 1 -r
+echo    # (optional) move to a new line
+if [[ ! $REPLY =~ ^[yY]$ ]]
+then
+    exit 1
+fi
+vendor/bin/deployment deployment.production.ini

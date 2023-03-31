@@ -1,0 +1,71 @@
+{define fullTitle}{ifset #metaTitle}{include metaTitle|striptags|trim|strip}{else}Freshbang repository{/ifset}{/define}
+{define fullDesc}{ifset #metaDescription}{include metaDescription|striptags|trim|strip}{else}The Universe started with The Big Bang. So every SFN project should start with The Fresh Bang.{/ifset}{/define}
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Freshbang</title>
+	<meta name="robots" content="{$robots}" n:ifset="$robots">
+	<meta name="description" content="{include fullDesc}">
+
+	{* OG things *}
+	<meta property="og:title" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Freshbang" />
+	<meta property="og:url" content="{plink //this}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="{$baseUrl}/assets/images/ogimage-.png" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="315" />
+	<meta property="og:site_name" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Freshbang" />
+	<meta property="og:description" content="{include fullDesc}" />
+	<meta property="og:locale" content="cs_CZ" />
+
+	{* CSS files *}
+	<link rel="stylesheet" href="{$basePath . '/assets/dist/css/1-vendor.min.css'|asset}">
+	<link rel="stylesheet" href="{$basePath . '/assets/dist/css/2-document.min.css'|asset}">
+	<link rel="stylesheet" href="{$basePath . '/assets/dist/css/3-core.min.css'|asset}">
+	<link rel="stylesheet" href="{$basePath . '/assets/dist/css/4-components.min.css'|asset}">
+	<link rel="stylesheet" href="{$basePath . '/assets/dist/css/5-ui.min.css'|asset}">
+	<link rel="stylesheet" href="{$basePath . '/assets/cookie-consent/dist/css/cookies.min.css'|asset}">
+
+	{* JS files *}
+	<script src="{$basePath . '/assets/dist/js/jquery-3.5.1.min.js'|asset}"></script>
+	<script src="{$basePath . '/assets/dist/js/nette.ajax.min.js'|asset}"></script>
+	<script src="{$basePath . '/assets/dist/js/live-form-validation.min.js'|asset}"></script>
+	<script src="{$basePath . '/assets/dist/js/svg.min.js'|asset}"></script>
+	<script src="{$basePath . '/assets/dist/js/hamburger.min.js'|asset}"></script>
+	<script defer src="{$basePath . '/assets/cookie-consent/dist/js/cookies.min.js'|asset}"></script>
+	<script src="{$basePath . '/assets/dist/js/main.min.js'|asset}"></script>
+
+	{include 'includes/tracking/googleAnalytics.latte'}
+</head>
+
+<body>
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
+		<p>{$flash->message}</p>
+	</div>
+
+	{include 'includes/header.latte'}
+
+	<main class="content">
+		{include content}
+	</main>
+
+	{include 'includes/footer.latte'}
+
+	<div id="overlay">
+		<div class="navigation navigation--mobile">
+			{include 'includes/navigation.latte'}
+		</div>
+	</div>
+
+	{block scripts}
+		<script>
+			$(function () {
+				$.nette.init();
+			});
+		</script>
+	{/block}
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+	"name": "freshbang",
+	"version": "1.0.0",
+	"description": "Freshbang frontend packages",
+	"main": "gulpfile.babel.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "David Malcát",
+	"license": "proprietary",
+	"devDependencies": {
+		"@babel/core": "^7.6.4",
+		"@babel/preset-env": "^7.6.3",
+		"@types/gulp": "^4.0.6",
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.7.0",
+		"del": "^5.1.0",
+		"gulp": "^4.0.2",
+		"gulp-babel": "^7.0.1",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-sass": "^4.1.0",
+		"node-sass": "^4.14.0",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-uglify-es": "^2.0.0"
+	},
+	"dependencies": {}
+}

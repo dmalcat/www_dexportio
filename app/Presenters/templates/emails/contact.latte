@@ -1,0 +1,52 @@
+<html style="margin: 0; padding: 0;background-color: #FFFFFF;">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>FreshBangApp</title>
+</head>
+<body style="margin: 0; padding: 0;border-collapse: collapse; background-color: #FFFFFF;">
+<table>
+	<tr>
+		<td>&nbsp;</td>
+		<td style="vertical-align: top; width:800px;" width="800" valign="top">
+			<table style="width: 100%; margin: 0; padding: 0;background-color: #FFFFFF;color:#373A40;" align="left" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td style="line-height: 0; font-size: 0; background-color: #FFFFFF;width: 100px" align="center">
+						<!--separator--><p style="margin: 0; padding: 0; font-family: Arial; font-size: 14px; line-height: 14px;">&nbsp;</p><!--/separator-->
+						<!--separator--><p style="margin: 0; padding: 0; font-family: Arial; font-size: 14px; line-height: 14px;">&nbsp;</p><!--/separator-->
+						<a href="https://www.domain-name.cz/" style="">
+							<img src="brand/logo.png" style="text-align: center;" width="150" border="0">
+						</a>
+						<!--separator--><p style="margin: 0; padding: 0; font-family: Arial; font-size: 14px; line-height: 14px;">&nbsp;</p><!--/separator-->
+						<!--separator--><p style="margin: 0; padding: 0; font-family: Arial; font-size: 14px; line-height: 14px;">&nbsp;</p><!--/separator-->
+					</td>
+				</tr>
+				<tr>
+					<td style="line-height:0;font-size:0;" height="35">&nbsp;</td>
+				</tr>
+				<tr style="color: #373A40;font-size: 15px;line-height: 20px;">
+					<th style="vertical-align: top;text-align: left;width: 100px;color: #373A40;">Odesílatel</th>
+					<td style="vertical-align: top;text-align: left;color: #373A40;">
+						{if (filter_var($from, FILTER_VALIDATE_EMAIL))}
+							<a href="mailto:{$from}" style="color: #373A40;">{$from}</a>
+						{else}
+							<a href="tel:{$from}" style="color: #373A40;">{$from}</a>
+						{/if}
+					</td>
+				</tr>
+				<tr>
+					<td style="line-height:0;font-size:0;" height="15">&nbsp;</td>
+				</tr>
+				<tr style="color: white;font-size: 15px;line-height: 20px;">
+					<th style="vertical-align: top;text-align: left;width: 100px; color: #373A40;">Zpráva</th>
+					<th style="vertical-align: top;text-align: left;color: #373A40;">{$message|noescape}</th>
+				</tr>
+				<tr>
+					<td style="line-height:0;font-size:0;" height="45">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+</body>
+</html>

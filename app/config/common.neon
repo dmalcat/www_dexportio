@@ -1,0 +1,91 @@
+parameters:
+
+	presets:
+		contact:
+			mail: 'www@freshnet.cz'
+			phone: '+420777111222333'
+
+		analytics:
+			googleAnalytics:
+				cz: 'cz-XXXXXXXX'
+				sk: 'sk-XXXXXXXX'
+
+	database:
+		host: bonifac.studiofresh.intra
+		dbname: freshbangapp
+		user: sfn
+		password: studiofreshnet
+
+	translations: '%appDir%/locales/translations.neon'
+
+	mailing:
+		imageBasePath: '%appDir%/../www/assets/images'
+
+		senders: 'MAIL SENDER <www@freshnet.cz>'
+
+		groups:
+			admins: [ 'www@freshnet.cz' ]
+
+		mails:
+			contact:
+				subjects: 'Nový kontakt z webu'
+				templates: '%appDir%/Presenters/templates/emails/contact.latte'
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: FreshBangApp\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 2 months
+	cookiePath: @httpRequest::getUrl()::getBasePath()
+
+
+database:
+	dsn: 'mysql:host=%database.host%.;dbname=%database.dbname%'
+	user: %database.user%
+	password: %database.password%
+	options:
+		lazy: yes
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+
+services:
+	- Freshio\Presets\Presets( %presets% )
+	- Freshio\Utils\AssetVersioning( %wwwDir% )
+
+	translator:
+		class: Freshio\Localization\SimpleTranslator
+		setup:
+			- addTranslations( '%translations%' )
+
+	freshio.localization:
+		class: Freshio\Localization\Localization
+		arguments:
+			- [ cs, sk ] # languages
+			- [ cz, sk ] # regions
+		setup:
+			- setTranslator( @translator )
+
+	freshio.mailing:
+		class: Freshio\Mailing\Mailing
+		setup:
+			- setImageBasePath( %mailing.imageBasePath% )
+			- setSender( %mailing.senders% )
+			- create(
+				'contact',
+				%mailing.mails.contact.subjects%,
+				[ %mailing.groups.admins% ],
+				%mailing.mails.contact.templates%
+			)
+
+	- FreshBangApp\Components\CookieAgreement\CookieAgreementControlFactory
+
+	router: FreshBangApp\Router\RouterFactory::createRouter

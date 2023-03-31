@@ -1,0 +1,67 @@
+{
+	"name": "studiofreshnet/freshbang",
+	"type": "project",
+	"description": "The Fresh Bang SFN boilerplate",
+	"license": [ "proprietary" ],
+	"authors": [
+		{
+			"name": "Roman Pistek",
+			"homepage": "https://www.freshnet.cz"
+		},
+		{
+			"name": "David Malcat",
+			"homepage": "https://www.freshnet.cz"
+		},
+		{
+			"name": "Radim Pacak",
+			"homepage": "https://www.freshnet.cz"
+		}
+	],
+	"require": {
+		"php": ">= 8.0",
+		"freshio/localization": "dev-master",
+		"freshio/presets": "dev-master",
+		"freshio/utils": "dev-master",
+		"freshio/mailing": "dev-master",
+		"latte/latte": "^2.9",
+		"nette/application": "^3.1",
+		"nette/bootstrap": "^3.1",
+		"nette/caching": "^3.1",
+		"nette/database": "^3.1",
+		"nette/di": "^3.0",
+		"nette/finder": "^2.5",
+		"nette/forms": "^3.1",
+		"nette/http": "^3.1",
+		"nette/mail": "^3.1",
+		"nette/robot-loader": "^3.3",
+		"nette/security": "^3.1",
+		"nette/utils": "^3.2",
+		"tracy/tracy": "^2.8"
+	},
+	"require-dev": {
+		"roave/security-advisories": "dev-latest",
+		"dg/ftp-deployment": "v3.3.1",
+		"symfony/thanks": "^1"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"allow-plugins": {
+			"symfony/thanks": true
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"FreshBangApp\\": "app/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"repositories": {
+		"gitlab.com/11034353": {
+			"type": "composer",
+			"url": "https://gitlab.com/api/v4/group/11034353/-/packages/composer/packages.json"
+		}
+	}
+}

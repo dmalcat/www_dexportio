@@ -1,0 +1,24 @@
+{varType string|null $googleAnalyticsCodeCZ}
+{varType string|null $googleAnalyticsCodeSK}
+{varType string $region}
+{if $region === 'cz' && $googleAnalyticsCodeCZ}
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id={$googleAnalyticsCodeCZ}"></script>
+	<script type="text/plain" data-cookiecategory="analytics">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){ dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', '{$googleAnalyticsCodeCZ|noescape}');
+	</script>
+{elseif $region === 'sk' && $googleAnalyticsCodeSK}
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id={$googleAnalyticsCodeSK}"></script>
+	<script type="text/plain" data-cookiecategory="analytics">
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){ dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', '{$googleAnalyticsCodeSK|noescape}');
+	</script>
+{/if}

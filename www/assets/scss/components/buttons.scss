@@ -1,0 +1,21 @@
+@import '../config';
+@import '../core/breakpoints';
+
+.button {
+	display: inline-flex;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1rem;
+	line-height: 1.25;
+	border-radius: $button-radius;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	@include max940px {
+		display: block;
+	}
+}
+
+.button--black {
+	background-color: $black;
+	color: $white;
+}

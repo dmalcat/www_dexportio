@@ -1,0 +1,17 @@
+@import '../config';
+
+section {
+	margin-bottom: $section-gutter;
+}
+
+.wrapper {
+	max-width: $grid-max-width;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+	box-sizing: border-box;
+}
+
+table {
+	border-collapse: collapse;
+}

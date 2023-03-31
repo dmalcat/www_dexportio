@@ -1,0 +1,80 @@
+// Breakpoints
+$screen375px: "375px";
+$screen480px: "480px";
+$screen640px: "640px";
+$screen768px: "768px";
+$screen940px: "940px";
+$screen1024px: "1024px";
+
+
+@mixin min375px {
+	@media screen and (min-width: #{$screen375px}) {
+		@content;
+	}
+}
+
+@mixin max375px {
+	@media screen and (max-width: #{$screen375px}) {
+		@content;
+	}
+}
+
+@mixin min480px {
+	@media screen and (min-width: #{$screen480px}) {
+		@content;
+	}
+}
+
+@mixin max480px {
+	@media screen and (max-width: #{$screen480px}) {
+		@content;
+	}
+}
+
+@mixin min640px {
+	@media screen and (min-width: #{$screen640px}) {
+		@content;
+	}
+}
+
+@mixin max640px {
+	@media screen and (max-width: #{$screen640px}) {
+		@content;
+	}
+}
+
+@mixin min768px {
+	@media screen and (min-width: #{$screen768px}) {
+		@content;
+	}
+}
+
+@mixin max768px {
+	@media screen and (max-width: #{$screen768px}) {
+		@content;
+	}
+}
+
+@mixin min940px {
+	@media screen and (min-width: #{$screen940px}) {
+		@content;
+	}
+}
+
+@mixin max940px {
+	@media screen and (max-width: #{$screen940px}) {
+		@content;
+	}
+}
+
+@mixin min1024px {
+	@media screen and (min-width: #{$screen1024px}) {
+		@content;
+	}
+}
+
+@mixin max1024px {
+	@media screen and (max-width: #{$screen1024px}) {
+		@content;
+	}
+}

@@ -1,0 +1,46 @@
+@import '../config';
+
+.cover {
+	position: relative;
+	.cover__image {
+		display: block;
+		max-width: 1920px;
+		width: 100%;
+		margin: 0 auto;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.cover__wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	h1 {
+		font-size: $hero-font-size;
+		color: $black;
+		margin-bottom: 1rem;
+		text-align: center;
+		@media screen and (max-width: 1270px) {
+			font-size: $hero-font-size - 0.5rem;
+		}
+
+		@media screen and (max-width: 830px) {
+			font-size: $hero-font-size - 1rem;
+		}
+
+		@include max375px {
+			font-size: $hero-font-size - 0.5rem;
+		}
+	}
+
+	.cover__copy {
+		margin-bottom: 2rem;
+	}
+}

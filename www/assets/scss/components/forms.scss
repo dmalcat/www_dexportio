@@ -1,0 +1,55 @@
+@import '../config';
+
+.form {
+	.form__group {
+		display: flex;
+		margin-bottom: 2rem;
+	}
+
+	@for $i from 1 through 10 {
+		.form__group--#{$i}c {
+			justify-content: space-between;
+			gap: $form-columns-gap;
+			.form__control {
+				width: calc(100%/#{$i});
+			}
+		}
+	}
+
+	.form__group--1c {
+		.form__control {
+			width: 100%;
+		}
+	}
+
+	.form__control {
+		width: 100%;
+	}
+
+	.form__input,
+	.form__select,
+	.form__textarea {
+		width: 100%;
+		box-sizing: border-box;
+		padding: $form-input-padding-tops $form-input-padding-sides;
+		border: $form-input-border-width solid $form-input-border-color;
+		border-radius: $form-input-border-radius;
+		font-size: $form-input-text-size;
+		line-height: $base-line-height;
+		color: $form-input-text-color;
+		background-color: $form-input-background-color;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.form__textarea {
+		$minimum-rows: 4;
+
+		min-height: calc((#{$form-input-text-size} * #{$base-line-height}) * #{$minimum-rows} + #{$form-input-padding-tops} * 2);
+	}
+
+	.form__button {
+		width: 100%;
+	}
+}

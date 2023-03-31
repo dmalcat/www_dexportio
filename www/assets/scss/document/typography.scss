@@ -1,0 +1,51 @@
+@import '../config';
+
+html,
+body {
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5 {
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: $h1-font-size;
+	line-height: 1.25;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	line-height: 1.125;
+}
+
+h3 {
+	font-size: $h3-font-size;
+	line-height: 1.1;
+}
+
+h4 {
+	font-size: $h4-font-size;
+	line-height: 1.05;
+}
+
+p {
+	font-size: $base-paragraph-size;
+}
+
+strong {
+	font-weight: 600;
+}
+
+a {
+	color: inherit;
+	@if ($underlined-links == true) {
+		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
+	} @else {
+		text-decoration: none;
+	}
+}
