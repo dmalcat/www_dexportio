@@ -1,23 +1,23 @@
-{define fullTitle}{ifset #metaTitle}{include metaTitle|striptags|trim|strip}{else}Freshbang repository{/ifset}{/define}
-{define fullDesc}{ifset #metaDescription}{include metaDescription|striptags|trim|strip}{else}The Universe started with The Big Bang. So every SFN project should start with The Fresh Bang.{/ifset}{/define}
+{define fullTitle}{ifset #metaTitle}{include metaTitle|striptags|trim|strip}{else}Dexportio repository{/ifset}{/define}
+{define fullDesc}{ifset #metaDescription}{include metaDescription|striptags|trim|strip}{else}{/ifset}{/define}
 
 <!DOCTYPE html>
 <html lang="cs">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Freshbang</title>
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Dexportio</title>
 	<meta name="robots" content="{$robots}" n:ifset="$robots">
 	<meta name="description" content="{include fullDesc}">
 
 	{* OG things *}
-	<meta property="og:title" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Freshbang" />
+	<meta property="og:title" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Dexportio" />
 	<meta property="og:url" content="{plink //this}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="{$baseUrl}/assets/images/ogimage-.png" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
-	<meta property="og:site_name" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Freshbang" />
+	<meta property="og:site_name" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Dexportio" />
 	<meta property="og:description" content="{include fullDesc}" />
 	<meta property="og:locale" content="cs_CZ" />
 

@@ -2,10 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FreshBangApp\Presenters;
+namespace Dexportio\Presenters;
 
 use Freshio\Localization\Localization;
-use Freshio\Mailing\Mailing;
 use Freshio\Presets\Presets;
 use Freshio\Utils\AssetVersioning;
 use Nette;
@@ -23,9 +22,6 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 
 	/** @var Presets @inject */
 	public Presets $presets;
-
-	/** @var Mailing @inject */
-	public Mailing $mailing;
 
 	/** @var string @persistent */
 	public $region;

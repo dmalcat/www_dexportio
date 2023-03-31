@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FreshBangApp\Presenters;
+namespace Dexportio\Presenters;
 
 use Nette;
 use Nette\Application\BadRequestException;

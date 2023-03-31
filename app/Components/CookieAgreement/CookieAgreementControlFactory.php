@@ -1,6 +1,6 @@
 <?php
 
-namespace FreshBangApp\Components\CookieAgreement;
+namespace Dexportio\Components\CookieAgreement;
 
 
 interface CookieAgreementControlFactory

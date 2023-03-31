@@ -1,20 +1,12 @@
 {
-	"name": "studiofreshnet/freshbang",
+	"name": "dexportio/dexportio",
 	"type": "project",
-	"description": "The Fresh Bang SFN boilerplate",
+	"description": "The Dexportio project",
 	"license": [ "proprietary" ],
 	"authors": [
 		{
-			"name": "Roman Pistek",
-			"homepage": "https://www.freshnet.cz"
-		},
-		{
 			"name": "David Malcat",
-			"homepage": "https://www.freshnet.cz"
-		},
-		{
-			"name": "Radim Pacak",
-			"homepage": "https://www.freshnet.cz"
+			"homepage": "https://www.malcat.cz"
 		}
 	],
 	"require": {
@@ -22,7 +14,6 @@
 		"freshio/localization": "dev-master",
 		"freshio/presets": "dev-master",
 		"freshio/utils": "dev-master",
-		"freshio/mailing": "dev-master",
 		"latte/latte": "^2.9",
 		"nette/application": "^3.1",
 		"nette/bootstrap": "^3.1",
@@ -53,7 +44,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"FreshBangApp\\": "app/"
+			"Dexportio\\": "app/"
 		}
 	},
 	"minimum-stability": "dev",

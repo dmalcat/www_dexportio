@@ -1,7 +1,7 @@
 {
-	"name": "freshbang",
+	"name": "dexportio",
 	"version": "1.0.0",
-	"description": "Freshbang frontend packages",
+	"description": "Dexportio frontend packages",
 	"main": "gulpfile.babel.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"

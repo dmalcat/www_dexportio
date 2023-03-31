@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FreshBangApp\Router;
+namespace Dexportio\Router;
 
 use Nette;
 use Nette\Application\Routers\RouteList;
@@ -94,7 +94,7 @@ final class RouterFactory
 	{
 		static $hostPatterns = [
 			'localhost'                    => self::LOCAL_DEV,
-			'domain-name\.freshdev80\.cz'  => self::DEV_STAGE,
+			'domain-name\.dexportio\.cz'  => self::DEV_STAGE,
 			'www\.domain-name\.cz'         => self::LIVE,
 			'www\.domain-name\.sk'         => self::LIVE
 		];

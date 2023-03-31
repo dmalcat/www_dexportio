@@ -63,7 +63,7 @@ cc.run({
     languages: {
         'cs': {
             consent_modal: {
-                title: 'Freshbang používá cookies.',
+                title: 'Dexportio používá cookies.',
                 description: 'Jsou to malé soubory, díky kterým vám web nabídne jen takový obsah, který očekáváte, nebude vás obtěžovat věcmi, které vás nezajímají a vy tak najdete to, co hledáte. Aby to tak opravdu bylo, potřebujeme od vás souhlas s ukládáním cookies do vašeho prohlížeče.',
                 primary_btn: {
                     text: 'OK, souhlasím',

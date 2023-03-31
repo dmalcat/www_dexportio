@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
+use Nette\Application\Application;
+
 if (file_exists(__DIR__ . '/.maintenance.php')) {
 	require __DIR__ . '/.maintenance.php';
 }
 
 require __DIR__ . '/../vendor/autoload.php';
 
-FreshBangApp\Bootstrap::boot()
+Dexportio\Bootstrap::boot()
 	->createContainer()
-	->getByType(Nette\Application\Application::class)
+	->getByType(Application::class)
 	->run();

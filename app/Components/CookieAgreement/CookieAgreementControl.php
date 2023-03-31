@@ -1,6 +1,6 @@
 <?php
 
-namespace FreshBangApp\Components\CookieAgreement;
+namespace Dexportio\Components\CookieAgreement;
 
 use Freshio\Localization\Localization;
 use Nette\Application\UI\Control;
@@ -20,7 +20,7 @@ final class CookieAgreementControl extends Control
 	private bool $hidden;
 
 	/** @const string */
-	public const COOKIE_NAME = 'freshbangapp-cookie-agreed';
+	public const COOKIE_NAME = 'dexportio-cookie-agreed';
 
 
 	/**
