@@ -1,0 +1,17 @@
+.packages {
+    .packages__row {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .packages__item {
+        width: 33%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}

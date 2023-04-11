@@ -1,0 +1,15 @@
+.usp {
+    .usp__row {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .usp__item {
+        width: 33%;
+    }
+}

@@ -1,0 +1,54 @@
+@import '../config';
+
+.hero {
+	position: relative;
+	display: flex;
+	padding: 3rem 0;
+
+	.hero__copy {
+		width: 50%;
+		box-sizing: border-box;
+		padding-right: 4rem;
+	}
+
+	.hero__visual {
+		display: block;
+		width: 50%;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.hero__wrapper {
+		display: flex;
+		align-items: center;
+		padding: 0;
+	}
+
+	h1 {
+		font-size: $hero-font-size;
+		font-weight: 500;
+		line-height: 1.35;
+		.highlight {
+			color: $blue;
+			font-weight: 700;
+			/*
+			background: -webkit-linear-gradient(215deg, rgba(0,124,207,1) 0%, rgba(0,211,168,1) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			*/
+		}
+	}
+
+	p {
+		font-size: 22px;
+		font-weight: 500;
+		line-height: 1.5;
+		margin-bottom: 2rem;
+	}
+
+	.hero__copy {
+		margin-bottom: 2rem;
+	}
+}

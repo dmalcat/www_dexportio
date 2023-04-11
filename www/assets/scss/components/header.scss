@@ -11,13 +11,18 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 2rem 0;
 	}
 }
 
 .headerLogo {
 	.headerLogo__image {
-		max-width: 5rem;
+		max-width: 10rem;
 		width: 100%;
+	}
+
+	.headerLogo__link {
+		display: block;
 	}
 }
 

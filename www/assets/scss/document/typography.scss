@@ -1,9 +1,10 @@
 @import '../config';
 
-html,
-body {
+html {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
+	font-family: $font-poppins;
+
 }
 
 h1, h2, h3, h4, h5 {
@@ -13,11 +14,16 @@ h1, h2, h3, h4, h5 {
 h1 {
 	font-size: $h1-font-size;
 	line-height: 1.25;
+	margin-bottom: 3rem;
+	color: $dark-blue;
 }
 
 h2 {
 	font-size: $h2-font-size;
-	line-height: 1.125;
+	line-height: 1.35;
+	color: $dark-blue;
+	margin-bottom: 2rem;
+	text-align: center;
 }
 
 h3 {
@@ -32,6 +38,7 @@ h4 {
 
 p {
 	font-size: $base-paragraph-size;
+	line-height: 1.75;
 }
 
 strong {

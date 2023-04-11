@@ -3,36 +3,205 @@
 
 {block content}
 
-<section class="cover">
-	<div class="cover__visual">
-		<div class="cover__visual-inner">
-			<picture class="cover__image">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_640.png" media="(max-width: 640px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_768.webp" media="(max-width: 768px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_768.png" media="(max-width: 768px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.webp" media="(max-width: 1024px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_1920.png" media="(max-width: 1920px)" type="image/png">
-				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
-				<img src="{$basePath}/assets/images/content/cover/cover_1920.png" alt="">
-			</picture>
+<section class="hero">
+	<div class="hero__wrapper wrapper">
+	<div class="hero__copy">
+		<h1>
+			Chcete <span class="highlight">zefektivnit</span> <br> vaše podnikání?
+		</h1>
+		<p>
+			Přenechte nám obchodní rizika a získejte konkurenční výhody díky naší nové obchodní platformě.
+		</p>
+		<div>
+			{*<a class="button button--green" href="">Jak to funguje</a>*}
+			<a class="button button--darkblue" href="">Jak to funguje</a>
 		</div>
 	</div>
+	
+	<div class="hero__visual">
+		<picture class="hero__image">
+			{*}
+			<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_640.png" media="(max-width: 640px)" type="image/png">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_768.webp" media="(max-width: 768px)" type="image/webp">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_768.png" media="(max-width: 768px)" type="image/png">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_1024.webp" media="(max-width: 1024px)" type="image/webp">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
+			<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
+			{*}
+			<source srcset="{$basePath}/assets/images/content/cover/placeholder.png" media="(max-width: 1920px)" type="image/png">
+			<img src="{$basePath}/assets/images/content/cover/placeholder.png" alt="">
+		</picture>
+	</div>
+</section>
 
-	<div class="cover__wrapper wrapper">
-		<h1>
-			Chcete zefektivnit vaše podnikání?
-		</h1>
-		<p class="cover__copy">
-			Přenechte nám obchodní rizika a získejte konkurenční výhody díky naší (revoluční/nové) obchodní platformě.
-		</p>
-		<div class="cover__button">
-			<a class="button button--black" href="">Jak to funguje</a>
+<section class="intro">
+	<div class="intro__wrapper wrapper">
+		<h2>Intro</h2>
+
+		<div class="intro__copy">
+			<p>
+				Nabízíme profesionální pomoc při akvizici nových zákazníků a budování vztahů s těmi stávajícími. V rámci naší platformy získáte přístup do rozsáhlé databáze firem, které jsou s vaším businessem kompatibilní. Zajistíme také budování vztahů s vašimi stávajícími klienty a zastoupení na schůzkách v ČR i zahraničí.
+			</p>
+
+			<p>
+				S námi můžete rychle posílit své podnikání a snadno dosáhnout obchodních cílů za zlomek nákladů oproti internímu obchodnímu oddělení. 
+			</p>
 		</div>
+
+		{*<div class="base-gradient"></div>*}
+		
+		<div class="usp">
+			<div class="usp__row">
+				<div class="usp__item">
+					<h3>Snížení nákladů</h3>
+					<p>
+						Díky externímu obchodnímu oddělení snížíte náklady na vytvoření a udržování interního obchodního týmu o 60%*.
+					</p>
+				</div>
+				<div class="usp__item">
+					<h3>Zlepšení výkonnosti</h3>
+					<p>
+						Zaměřujeme se pouze na obchodní růst a úspěch.
+					</p>
+				</div>
+				<div class="usp__item">
+					<h3>Rozšíření sítě kontaktů</h3>
+					<p>
+						Máme širokou síť kontaktů a potenciálních klientů.
+					</p>
+				</div>
+				<div class="usp__item">
+					<h3>Flexibilita</h3>
+					<p>
+						Umíme se rychle přizpůsobit různým situacím a požadavkům klienta.
+					</p>
+				</div>
+				<div class="usp__item">
+					<h3>Důraz na výsledky</h3>
+					<p>
+						Soustředíme se na výsledky a úspěch v obchodování, zvyšování tržeb a růst
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="packages">
+	<div class="packages__wrapper wrapper">
+		<h2>Balíčky</h1>
+
+		<div class="packages__row">
+			<div class="packages__item">
+				<h3>Business</h3>
+				<ul>
+					<li>přístup k databázi</li>
+					<li>automatická kompatibilita (akvizice)</li>
+					<li>týdenní aktualizace partnerů</li>
+					<li>(některé další služby se platí zvlášť)</li>
+				</ul>
+				<span class="packages__price">Cena: 100 €</span>
+			</div>
+
+			<div class="packages__item">
+				<h3>Business +</h3>
+				<ul>
+					<li>přístup k databázi</li>
+					<li>automatická kompatibilita (akvizice)</li>
+					<li>týdenní aktualizace partnerů</li>
+					<li>(některé další služby se platí zvlášť)</li>
+					<li>osobní schůzka jednou za měsíc</li>
+					<li>reportování každý týden</li>
+					<li>přímé oslovení 40 firem měsíčně a představení produktu či služby</li>
+					<li>marketingová podpora</li>
+				</ul>
+				<span class="packages__price">Cena: 1 000 €</span>
+			</div>
+
+			<div class="packages__item">
+				<h3>Business Premium</h3>
+				<ul>
+					<li>přístup k databázi</li>
+					<li>automatická kompatibilita (akvizice)</li>
+					<li>týdenní aktualizace partnerů</li>
+					<li>neomezený počet schůzek</li>
+					<li>pravidelné reportování</li>
+					<li>neomezené schůzky v zahraničí</li>
+					<li>přímé oslovení 80 firem měsíčně a představení produktu či služby</li>
+					<li>marketingová podpora</li>
+				</ul>
+				<span class="packages__price">Cena: 3 000 €</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="caseStudy">
+	<div class="caseStudy__wrapper wrapper">
+		<h2>Case study</h2>
+		
+		<p>
+			Chybí podklady.
+		</p>
+	</div>
+</section>
+
+<section class="caseStudy">
+	<div class="caseStudy__wrapper wrapper">
+		<h2>Naši zákazníci</h2>
+
+		<p>
+			Aneb firmy, které nám věří.
+		</p>
+	</div>
+</section>
+
+<section class="contactForm" id="kontaktujte-nas">
+	<div class="contactForm__wrapper wrapper">
+		<h2>Kontaktujte nás</h2>
+
+		<div class="form">
+            <div class="form__inner">
+                <div class="form__group">
+                    <div class="form__control">
+                        <label class="form__label">Jméno a příjmení</label>
+                        <input type="text" class="form__input">
+                    </div>
+                </div>
+                <div class="form__group">
+                    <div class="form__control">
+                        <label class="form__label">Telefon nebo email</label>
+                        <input type="text" class="form__input">
+                    </div>
+                    <div class="form__control">
+                        <label class="form__label">Společnost</label>
+                        <input type="text" class="form__input">
+                    </div>
+                </div>
+                <div class="form__group form__group--1c">
+                    <div class="form__control">
+                        <label class="form__label">Vaše zpráva</label>
+                        <textarea type="text" class="form__textarea"></textarea>
+                    </div>
+                </div>
+                <div class="form__control form__control--city">
+                    <label class="form__label">Město</label>
+                    <input type="text" class="form__input">
+                </div>
+                <div class="form__group form__group--1c">
+                    <div class="form__control">
+                        <p>Odesláním souhlasíte se <a href="">zpracováním osobních údajů</a>.</p>
+                    </div>
+                </div>
+                <div class="form__group form__group--button">
+                    <input class="button button--white" value="Odeslat" />
+                </div>
+            </div>
+        </div>
 	</div>
 </section>

@@ -5,11 +5,13 @@
 	display: inline-flex;
 	text-align: center;
 	text-decoration: none;
-	font-size: 1rem;
-	line-height: 1.25;
+	font-size: 0.9rem;
+	line-height: 1;
 	border-radius: $button-radius;
 	cursor: pointer;
-	padding: 0.5rem 1rem;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-weight: 700;
 	@include max940px {
 		display: block;
 	}
@@ -18,4 +20,22 @@
 .button--black {
 	background-color: $black;
 	color: $white;
+}
+
+.button--green {
+	background-color: $green;
+	color: $white;
+	@extend .trans;
+	&:hover {
+		background-color: darken($green, 5%);
+	}
+}
+
+.button--darkblue {
+	background-color: $dark-blue;
+	color: $white;
+	@extend .trans;
+	&:hover {
+		background-color: lighten($dark-blue, 5%);
+	}
 }

@@ -12,22 +12,26 @@ $base-line-height: 1.5;
 
 $base-paragraph-size: 1rem;
 
-$hero-font-size: 4rem;
-$h1-font-size: 3rem;
-$h2-font-size: 2.25rem;
-$h3-font-size: 1.75rem;
+$hero-font-size: 3.33rem;
+$h1-font-size: 2.5rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 1.65rem;
 $h4-font-size: 1.5rem;
 
 $underlined-links: true;
 
 
 // Fonts
-$fonts-path: '../../fonts/';
+$font-poppins: 'Poppins', sans-serif;
 
 
 // Colors
 $white: #FFF;
 $black: #000;
+
+$green: #00D3A8;
+$blue: #007CCE;
+$dark-blue: #031A3F;
 
 $base-text-color: $white;
 
@@ -50,7 +54,7 @@ $form-input-text-color: $black;
 
 // Common radius
 $base-radius: 0.5rem;
-$button-radius: 0.5rem;
+$button-radius: 4px;
 
 // Header
 $header-bg-color: $white;
