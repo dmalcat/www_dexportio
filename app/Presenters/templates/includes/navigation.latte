@@ -4,7 +4,13 @@
 			<a class="navigation__link" n:href="Homepage:">Homepage</a>
 		</li>
 		<li n:class="navigation__item, $presenter->isLinkCurrent('Styleguide:default') ? navigation__item--active">
-			<a class="navigation__link" n:href="Styleguide:">Styleguide</a>
+			<a class="navigation__link" n:href="Styleguide:">O nás</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Styleguide:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Styleguide:">Balíčky</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Styleguide:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Styleguide:">Kontakt</a>
 		</li>
 		{*<a class="navigation__link" n:href="this, lang => 'sk'">SK</a>*}
 	</ul>

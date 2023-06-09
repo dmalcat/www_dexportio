@@ -1,15 +1,29 @@
 .usp {
+    margin-top: 6rem;
     .usp__row {
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
+        gap: 2rem;
     }
 
     h3 {
         font-size: 1.5rem;
+        color: $white
     }
 
     .usp__item {
-        width: 33%;
+        width: 30%;
+        padding: 0 4rem;
+        box-sizing: border-box;
+        text-align: center;
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .usp__icon {
+        display: block;
+        margin: 0 auto 1.5rem;
     }
 }

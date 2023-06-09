@@ -3,17 +3,45 @@
 .hero {
 	position: relative;
 	display: flex;
-	padding: 3rem 0;
+	padding: 7.5rem 0;
+	background-color: #222222;
+	//background-image: url("#{$images-path}/content/cover/cover-test3.png");
+	background-image: url("../../images/content/cover/cover-test3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: -130px auto 0;
 
 	.hero__copy {
-		width: 50%;
+		position: relative;
 		box-sizing: border-box;
-		padding-right: 4rem;
+		padding: 1rem;
+		z-index: 10;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			
+			z-index: 9;
+		}
 	}
 
 	.hero__visual {
+		position: relative;
 		display: block;
-		width: 50%;
+		width: 100%;
+		max-width: 400px;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			//background: rgb(34,34,34);
+			/*background: 
+				linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 100%),
+				linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 100%),
+				linear-gradient(180deg, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 100%),
+				linear-gradient(270deg, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 100%);
+			*/
+		}
 		img {
 			display: block;
 			width: 100%;
@@ -23,29 +51,40 @@
 	.hero__wrapper {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		padding: 0;
+		margin: 12rem auto 6rem;
 	}
 
 	h1 {
+		position: relative;
 		font-size: $hero-font-size;
-		font-weight: 500;
+		font-weight: 600;
 		line-height: 1.35;
+		color: $white;
+		z-index: 10;
 		.highlight {
 			color: $blue;
 			font-weight: 700;
-			/*
 			background: -webkit-linear-gradient(215deg, rgba(0,124,207,1) 0%, rgba(0,211,168,1) 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			*/
 		}
 	}
 
 	p {
-		font-size: 22px;
-		font-weight: 500;
-		line-height: 1.5;
+		position: relative;
+		font-size: 18px;
+		line-height: 1.6;
 		margin-bottom: 2rem;
+		color: $white;
+		font-weight: 200;
+		z-index: 10;
+	}
+
+	.button {
+		position: relative;
+		z-index: 10;
 	}
 
 	.hero__copy {

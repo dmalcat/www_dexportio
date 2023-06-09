@@ -4,7 +4,6 @@ html {
 	font-size: $base-font-size;
 	line-height: $base-line-height;
 	font-family: $font-poppins;
-
 }
 
 h1, h2, h3, h4, h5 {
@@ -20,10 +19,17 @@ h1 {
 
 h2 {
 	font-size: $h2-font-size;
-	line-height: 1.35;
-	color: $dark-blue;
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
 	text-align: center;
+	color: $white;
+	line-height: 1.35;
+	.subheadline {
+		display: block;
+		font-size: 14px;
+		font-weight: 200;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
 }
 
 h3 {
@@ -39,6 +45,14 @@ h4 {
 p {
 	font-size: $base-paragraph-size;
 	line-height: 1.75;
+	color: $white;
+}
+
+.perex {
+	text-align: center;
+	font-weight: 200;
+	font-size: 18px;
+	margin-bottom: 6rem;
 }
 
 strong {

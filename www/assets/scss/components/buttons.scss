@@ -17,14 +17,25 @@
 	}
 }
 
+.button--gradient {
+	color: $black;
+	background: rgb(0,124,207);
+    background: linear-gradient(215deg, rgba(0,124,207,1) 0%, rgba(0,211,168,1) 100%);
+}
+
 .button--black {
 	background-color: $black;
 	color: $white;
 }
 
+.button--blue {
+	background-color: $blue;
+	color: $white;
+}
+
 .button--green {
 	background-color: $green;
-	color: $white;
+	color: $gray;
 	@extend .trans;
 	&:hover {
 		background-color: darken($green, 5%);
@@ -32,10 +43,17 @@
 }
 
 .button--darkblue {
+	border: 1px solid $dark-blue;
 	background-color: $dark-blue;
 	color: $white;
 	@extend .trans;
 	&:hover {
 		background-color: lighten($dark-blue, 5%);
 	}
+}
+
+.button--transparent {
+	color: $white;
+	border: 1px solid $white;
+	font-weight: 400;
 }

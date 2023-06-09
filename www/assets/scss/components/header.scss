@@ -2,16 +2,17 @@
 
 .header {
 	position: relative;
-	background-color: $header-bg-color;
+	background-color: transparent;
+	z-index: 1010;
 	@media screen and (max-width: $hamburger-breakpoint) {
-		z-index: 1010;
+		
 	}
 
 	.header__wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 2rem 0;
+		padding: 1.25rem 0;
 	}
 }
 
