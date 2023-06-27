@@ -3,7 +3,7 @@ $grid-max-width: 90rem;
 
 
 // Spaces
-$section-gutter: 6rem;
+$section-gutter: 12rem;
 
 
 // Typography
@@ -34,9 +34,12 @@ $white: #FFF;
 $black: #000;
 
 $green: #00D3A8;
+
 $blue: #007CCE;
 $dark-blue: #031A3F;
+
 $gray: #222;
+$light-gray: #EAEAEA;
 
 $base-text-color: $white;
 
@@ -49,7 +52,7 @@ $form-input-padding-sides: 1rem;
 
 $form-input-border-radius: 0.5rem;
 $form-input-border-width: 1px;
-$form-input-border-color: $black;
+$form-input-border-color: $white;
 
 $form-input-text-size: $base-font-size;
 

@@ -48,6 +48,14 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				
+				$router->addRoute($basePath . $region . '/balicky', [
+					'presenter' 	=> 'Packages',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+
+
 				$router->addRoute($basePath . $region . '/styleguide', [
 					'presenter' 	=> 'Styleguide',
 					'action' 		=> 'default',

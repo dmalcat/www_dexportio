@@ -1,9 +1,14 @@
 @import '../config';
 
 .form {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+
 	.form__group {
 		display: flex;
 		margin-bottom: 2rem;
+		gap: 2rem;
 	}
 
 	@for $i from 1 through 10 {
@@ -26,6 +31,12 @@
 		width: 100%;
 	}
 
+	.form__control--city {
+		position: absolute;
+		z-index: 0;
+		left: -9899px;
+	}
+
 	.form__input,
 	.form__select,
 	.form__textarea {
@@ -38,15 +49,34 @@
 		line-height: $base-line-height;
 		color: $form-input-text-color;
 		background-color: $form-input-background-color;
+		transition: all 200ms ease-in-out;
 		&:focus {
 			outline: none;
+			border-color: $blue;
 		}
+	}
+
+	.form__input {
+		border-left: 0;
+		border-top: 0; 
+		border-right: 0;
+		border-radius: 0;
 	}
 
 	.form__textarea {
 		$minimum-rows: 4;
+		border-radius: $base-radius;
 
 		min-height: calc((#{$form-input-text-size} * #{$base-line-height}) * #{$minimum-rows} + #{$form-input-padding-tops} * 2);
+	}
+
+	.form__label {
+		display: block;
+		font-size: 13px;
+		font-weight: 500;
+		margin-bottom: 5px;
+		color: $white;
+		@extend .trans;
 	}
 
 	.form__button {

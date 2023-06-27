@@ -1,0 +1,46 @@
+.caseStudy {
+    .caseStudy__row {
+        max-width: 1060px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .caseStudy__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .caseStudy__col {
+        width: 50%;
+    }
+
+    .caseStudy__col--image {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        img {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .caseStudy__col--copy {
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-shadow: 0 0 20px 1px rgba(0,0,0,.15);
+        padding: 4rem;
+        box-sizing: border-box;
+        p {
+            font-family: $font-barlow;
+        }
+    }
+
+    h3 {
+        color: $white;
+    }
+
+    .row--button {
+        margin-top: 8rem;
+    }
+}
