@@ -1,0 +1,30 @@
+.filter {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+
+    .filter__wrapper {
+        //background-color: transparent;
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+        padding: 2rem;
+    }
+
+    h3 {
+        font-size: 1.35rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .filter__group {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 1.5rem;
+        .checkbox {
+            margin-right: 1.5rem;
+        }
+    }
+
+    .filter__row {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,30 @@
+.breadcrumb {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    
+    li {
+        display: flex;
+        list-style: none;
+        color: $gray;
+        
+        &:before {
+            display: flex;
+            content: ':';
+            margin: 0 1rem;
+            color: #777676;
+        }
+
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+
+        a, span {
+            color: #777676;
+        }
+    }
+}

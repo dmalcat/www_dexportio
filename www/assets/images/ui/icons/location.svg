@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>location</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.815686 0 0 0 0 0.666667 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="location" transform="translate(-428.000000, -3992.000000)" filter="url(#filter-1)">
+            <g transform="translate(428.000000, 3992.000000)">
+                <path d="M8,0 C3.802,0 0,3.403 0,7.602 C0,11.8 3.469,16.812 8,24 C12.531,16.812 16,11.8 16,7.602 C16,3.403 12.199,0 8,0 Z M8,11 C6.343,11 5,9.657 5,8 C5,6.343 6.343,5 8,5 C9.657,5 11,6.343 11,8 C11,9.657 9.657,11 8,11 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

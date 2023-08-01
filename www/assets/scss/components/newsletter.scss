@@ -1,0 +1,11 @@
+.newsletter {
+    p {
+        color: #7d7d7d;
+    }
+
+    .form__group {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

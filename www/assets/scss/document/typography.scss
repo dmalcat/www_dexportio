@@ -21,7 +21,7 @@ h2 {
 	font-size: $h2-font-size;
 	margin-bottom: 4rem;
 	text-align: center;
-	color: $white;
+	color: $dark-blue;
 	line-height: 1.35;
 	.subheadline {
 		display: block;
@@ -35,6 +35,7 @@ h2 {
 h3 {
 	font-size: $h3-font-size;
 	line-height: 1.1;
+	color: $dark-blue;
 }
 
 h4 {
@@ -45,7 +46,7 @@ h4 {
 p {
 	font-size: $base-paragraph-size;
 	line-height: 1.75;
-	color: $white;
+	color: $dark-blue;
 }
 
 .perex {
@@ -60,7 +61,7 @@ strong {
 }
 
 a {
-	color: inherit;
+	color: $dark-blue;
 	@if ($underlined-links == true) {
 		text-decoration: underline;
 		&:hover {
@@ -68,5 +69,31 @@ a {
 		}
 	} @else {
 		text-decoration: none;
+	}
+}
+
+.list {
+	font-weight: 300;
+	list-style: none;
+	padding-left: 1rem;
+	li {
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		color: $dark-blue;
+		line-height: 1.5;
+		padding-left: 2rem;
+		margin-bottom: 0.5rem;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 10px;
+			left: 0;
+			width: 10px;
+			height: 2px;
+			background-color: $green;
+			margin-right: 5px;
+		}
 	}
 }

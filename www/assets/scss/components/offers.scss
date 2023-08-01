@@ -1,0 +1,228 @@
+.offers {
+    margin-bottom: 3rem;
+    .offers__wrapper {
+        max-width: 90rem;
+        padding: 1.25rem 0;
+    }
+
+    .offers__list {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        list-style: none;
+        margin-bottom: 4rem;
+    }
+
+    .offers__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: calc(50% - 1.5rem);
+        background-color: transparent;
+        border-radius: 4px;
+        box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+        padding: 3rem;
+        box-sizing: border-box;
+    }
+
+    .offers__copy {
+        display: block;
+        text-align: left;
+        font-size: 0.9rem;
+        color: $dark-blue;
+        text-decoration: none;
+        &:hover {
+            .offers__headline {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .offers__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .offers__desc {
+        display: block;
+        line-height: 1.75;
+        margin-bottom: 1.5rem;
+    }
+
+    .offers__headline {
+        color: $dark-blue;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.35;
+    }
+
+    .offers__icon {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &:before {
+            content: '';
+            display: flex;
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .offers__icon--location {
+        &:before {
+            background-image: url("#{$images-path}/ui/icons/icon-location.svg");
+            width: 16px;
+            height: 24px;
+        }
+    }
+
+    .offers__icon--duration {
+        &:before {
+            background-image: url("#{$images-path}/ui/icons/icon-date.svg");
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .offers__icon--price {
+        &:before {
+            background-image: url("#{$images-path}/ui/icons/icon-salary.svg");
+            width: 25px;
+            height: 24px;
+        }
+    }
+
+    .button {
+        font-size: 0.8rem;
+        padding: 0.75rem 1.5rem;
+        color: $white;
+        &:hover {
+            background-color: $green;
+        }
+    }
+
+    .offers__link {
+        display: flex;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+    .offers__date {
+        display: block;
+        color: $gray;
+    }
+}
+
+.offers--list {
+    .offers__list {
+        padding: 0;
+        flex-flow: row wrap;
+    }
+
+    .offers__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: calc(50% - 1.5rem);
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.offerCont {
+    .perex {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .offerCont__row {
+        display: flex;
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .offerCont__group {
+        margin-bottom: 3rem;
+    }
+
+    .offerCont__groupAttr {
+        margin-bottom: 2rem;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding-left: 3rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .offerCont__groupAttr--country {
+        background-image: url("#{$images-path}/ui/icons/icon-location.svg");
+    }
+
+    .offerCont__groupAttr--contract {
+        background-image: url("#{$images-path}/ui/icons/icon-contract.svg");
+    }
+
+    .offerCont__groupAttr--salary {
+        background-image: url("#{$images-path}/ui/icons/icon-salary.svg");
+    }
+
+    .offerCont__groupAttr--company {
+        background-image: url("#{$images-path}/ui/icons/icon-company.svg");
+    }
+
+    .offerCont__groupAttrp--created {
+        background-image: url("#{$images-path}/ui/icons/icon-date.svg");
+    }
+
+    .offerCont__attr {
+        color: #7d7d7d;
+    }
+    
+    .offerCont__col--copy,
+    .offerCont__col--form {
+        width: calc(70% - 1.5rem);
+    }
+
+    .offerCont__col--copy {
+        .box {
+            margin-bottom: 3rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .box--form {
+            p {
+                color: #7d7d7d;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+    .offerCont__col--info {
+        width: calc(30% - 1.5rem);
+    }
+
+    .offerCont__col--form {
+        width: calc(70% - 5rem);
+    }
+
+    .offerCont__col--info {
+        h3 {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+}

@@ -36,7 +36,8 @@
 
 .button--green {
 	background-color: $green;
-	color: $gray;
+	color: darken($gray, 30%);
+	border: 0;
 	@extend .trans;
 	&:hover {
 		background-color: darken($green, 5%);

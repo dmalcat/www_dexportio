@@ -5,117 +5,100 @@
 
 <section class="hero">
 	<div class="hero__wrapper wrapper">
-	<div class="hero__copy">
-		<h1>
-			Roste vaše firma pomalu? <br>
-			<span class="highlight">Dodáme vám rychlost.</span>
-			{*}Chcete zefektivnit <br> vaše podnikání?{*}
-		</h1>
-		<p>
-			Přenechte nám obchodní rizika a získejte <br>
-			konkurenční výhody díky našemu špičkovému <br>
-			externímu obchodnímu oddělení. 
-		</p>
-		<div>
-			<a class="button button--gradient" href="">Jak to funguje</a>
+		<div class="hero__copy">
+			<h1>
+				Propojujeme potřeby <br> <span class="highlight">jednotlivců a firem.</span>
+			</h1>
+			<p>
+				Na naši unikátní platformě můžete najít ideální pracovní příležitost, <br> 
+				ale také navázat důležité obchodní partnerství. 
+			</p>
+
+			<div class="hero__buttons">
+				<a n:href="Offers:" class="button button--green">Zaměstnanci</a>
+				<a n:href="Offers:" class="button button--green">Firmy</a>
+			</div>
 		</div>
 	</div>
 
-	<div class="hero__visual">
-		<picture class="hero__image">
-			{*}
-			<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_640.png" media="(max-width: 640px)" type="image/png">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_768.webp" media="(max-width: 768px)" type="image/webp">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_768.png" media="(max-width: 768px)" type="image/png">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_1024.webp" media="(max-width: 1024px)" type="image/webp">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
-			<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
-			<source srcset="{$basePath}/assets/images/content/cover/cover-test3.png" media="(max-width: 1920px)" type="image/png">
-			{*}
-			<img src="{$basePath}/assets/images/content/cover/hero-image.svg" alt="">
-		</picture>
-	</div>
-</section>
-
-<section class="intro">
-	<div class="intro__wrapper wrapper">
-		<h2>
-			<span class="subheadline">Naše služby</span>
-			Zefektivněte <br>
-			vaše podnikání
-		</h2>
-
-		<p class="perex">
-			S námi ušetříte až 60% nákladů oproti internímu obchodnímu <br> 
-			týmu. Soustředíme se pouze na výsledky a úspěch <br>
-			v obchodování, zvyšování tržeb a růst.
-		</p>
-
-		<div class="services">
-			<ul class="services__list">
-				<li class="services__item">
-					<div class="services__image">
-						<img src="{$basePath}/assets/images/ui/icons/acquisition.svg" alt="">
-					</div>
-					<span class="services__copy">
-						<h3 class="services__headline">
-							Akvizice nových klientů
+	<div class="offers">
+		<div class="offers__wrapper wrapper">
+			<ul class="offers__list">
+				<li class="offers__item">
+					<a class="offers__copy" n:href="Offers:detail">
+						<h3 class="offers__headline">
+							Stavba rodinného domu
 						</h3>
-						<span class="services__desc">
-							Pečlivě vybrané firmy napřímo 
-							oslovíme s vašim produktem 
-							nebo službou na nejvyšší 
-							obchodní úrovni.
+						<span class="offers__desc">
+							Hledáme zkušené pracovníky pro stavbu rodinného domu, kteří jsou připraveni přinést své odborné dovednosti a vášeň do každého detailu.
 						</span>
-					</span>
+						<span class="offers__row">
+							<span class="offers__icon offers__icon--location">
+								ČR
+							</span>
+							<span class="offers__icon offers__icon--duration">
+								3 měsíce
+							</span>
+							<span class="offers__icon offers__icon--price">
+								5 000 €/měsíc 
+							</span>
+						</span>
+						<span class="offers__button">
+							<span class="button button--green">Detail nabídky</span>
+						</span>
+					</a>
 				</li>
-				<li class="services__item">
-					<div class="services__image">
-						<img src="{$basePath}/assets/images/ui/icons/database.svg" alt="">
-					</div>
-					<span class="services__copy">
-						<h3 class="services__headline">
-							Rozsáhlá databáze firem
+				<li class="offers__item">
+					<a n:href="Offers:detail" class="offers__copy">
+						<h3 class="offers__headline">
+							Obchodní partner pro svoz odpadu
 						</h3>
-						<span class="services__desc">
-							V naší rozsáhlé databázi čítající 
-							desítky tisíc kontaktů napříč všemi 
-							obory vybereme právě ty firmy, které 
-							jsou s vaším businessem 
-							kompatibilní. 
+						<span class="offers__desc">
+							Hledáme spolehlivého a efektivního partnera pro svoz odpadu, který nám pomůže udržovat čistotu a udržitelnost naší komunity.
 						</span>
-					</span>
+						<span class="offers__row">
+							<span class="offers__icon offers__icon--location">
+								ČR
+							</span>
+							<span class="offers__icon offers__icon--duration">
+								Doba neurčitá
+							</span>
+						</span>
+						<span class="offers__button">
+							<span class="button button--green">Detail nabídky</span>
+						</span>
+					</a>
 				</li>
-				<li class="services__item">
-					<div class="services__image">
-						<img src="{$basePath}/assets/images/ui/icons/relationships.svg" alt="">
-					</div>
-					<span class="services__copy">
-						<h3 class="services__headline">
-							Vyřídíme všechna jednání
+				<li class="offers__item">
+					<a n:href="Offers:detail" class="offers__copy">
+						<h3 class="offers__headline">
+							Partner pro firmu na výrobu ekolinky na zpracování odpadu
 						</h3>
-						<span class="services__desc">
-							Zastoupíme vás na obchodních jednáních a zajistíme efektivní komunikaci. Pomáháme vám získat důvěru, prezentovat vaše zájmy a dosáhnout úspěšných výsledků.
+						<span class="offers__desc">
+							Hledáme inovativního a spolehlivého partnera, abychom společně podpořili udržitelné a ekologické řešení odpadového hospodářství.
 						</span>
-					</span>
+						<span class="offers__row">
+							<span class="offers__icon offers__icon--location">
+								Evropa
+							</span>
+						</span>
+						<span class="offers__button">
+							<span class="button button--green">Detail nabídky</span>
+						</span>
+					</a>
 				</li>
 			</ul>
 		</div>
 
-		<div class="row row--center">
-			<a class="button button--gradient" href="">Více o službách</a>	
-		</div>
-		
-		{*<div class="base-gradient"></div>*}
+		<a n:href="Offers:default" class="offers__link">Všechny nabídky</a>
 	</div>
 </section>
 
+{include '../includes/pipeline.latte'}
 
+{include '../includes/about.latte'}
+
+{*}
 <section class="usp">
 	<div class="usp__wrapper wrapper">
 		<h2>
@@ -175,13 +158,13 @@
 		</div>
 	</div>
 </section>
-
+{*}
 
 
 <section class="caseStudy">
 	<div class="caseStudy__wrapper wrapper">
 		<h2>
-			<span class="subheadline">Case studies</span>
+			{*<span class="subheadline">Case studies</span>*}
 			Příběhy firem, <br> které nám věří
 		</h2>
 		
@@ -233,12 +216,12 @@
 		</div>
 		
 		<div class="row row--button row--center">
-			<a class="button button--gradient" href="">Všechny studie</a>
+			<a class="button button--green" href="">Všechny studie</a>
 		</div>
 	</div>
 </section>
 
-
+{*}
 <section class="packages">
 	<div class="packages__wrapper wrapper">
 		<h2>Balíčky</h2>
@@ -260,7 +243,7 @@
 						<li>(některé další služby se platí zvlášť)</li>
 					</ul>
 					<div class="packages__link">
-						<a href="" class="button button--gradient">Více informací</a>
+						<a href="" class="button button--gradient">Detail nabídky</a>
 					</div>
 				</div>
 			</div>
@@ -281,7 +264,7 @@
 						<li>marketingová podpora</li>
 					</ul>
 					<div class="packages__link">
-						<a n:href="Packages:default" class="button button--gradient">Více informací</a>
+						<a n:href="Packages:default" class="button button--gradient">Detail nabídky</a>
 					</div>
 				</div>
 			</div>
@@ -299,17 +282,18 @@
 						<li>marketingová podpora</li>
 					</ul>
 					<div class="packages__link">
-						<a href="" class="button button--gradient">Více informací</a>
+						<a href="" class="button button--gradient">Detail nabídky</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+{*}
 
+{*}
 <section class="testimonials">
 	<div class="testimonials__wrapper wrapper">
-		
 		<h2>
 			Naši klienti
 		</h2>
@@ -364,9 +348,10 @@
                     </div>
                 </div>
                 <div class="form__group form__group--button">
-                    <input class="button button--gradient" value="Odeslat" />
+                    <input class="button button--green" value="Odeslat" />
                 </div>
             </div>
         </div>
 	</div>
 </section>
+{*}

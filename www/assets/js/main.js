@@ -6,4 +6,6 @@ $(function() {
 		dots: true
 	});
 
+	var scroll = new SmoothScroll('a[href*="#"]');
+
 });

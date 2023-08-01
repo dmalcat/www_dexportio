@@ -55,6 +55,17 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/pracovni-nabidky', [
+					'presenter' 	=> 'Offers',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+				
+				$router->addRoute($basePath . $region . '/pracovni-nabidky/stavba-rodinneho-domu', [
+					'presenter' 	=> 'Offers',
+					'action' 		=> 'detail',
+					'region' 		=> $region
+				]);
 
 				$router->addRoute($basePath . $region . '/styleguide', [
 					'presenter' 	=> 'Styleguide',

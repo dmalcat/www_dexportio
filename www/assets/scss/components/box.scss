@@ -1,0 +1,13 @@
+.box {
+    padding: 3rem;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+}
+
+.box--sticky {
+    position: sticky;
+    top: 2rem;
+}
+
+.box--white {
+    background-color: rgba(255, 255, 255, 0.7);
+}

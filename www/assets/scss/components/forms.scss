@@ -52,20 +52,16 @@
 		transition: all 200ms ease-in-out;
 		&:focus {
 			outline: none;
-			border-color: $blue;
+			border-color: darken(#cfcfcf, 40%);
+			border-color: $dark-blue;
 		}
 	}
 
-	.form__input {
-		border-left: 0;
-		border-top: 0; 
-		border-right: 0;
-		border-radius: 0;
-	}
+	
 
 	.form__textarea {
 		$minimum-rows: 4;
-		border-radius: $base-radius;
+		border-radius: $form-input-border-radius;
 
 		min-height: calc((#{$form-input-text-size} * #{$base-line-height}) * #{$minimum-rows} + #{$form-input-padding-tops} * 2);
 	}
@@ -75,11 +71,66 @@
 		font-size: 13px;
 		font-weight: 500;
 		margin-bottom: 5px;
-		color: $white;
+		color: $dark-blue;
 		@extend .trans;
 	}
 
 	.form__button {
 		width: 100%;
+	}
+}
+
+.checkbox {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	font-size: 1rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+		&:checked ~ .checkmark {
+			background-color: $green;
+			&:after {
+				display: block;
+			}
+		}
+	}
+
+	.checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		background-color: #cdcdcd;
+		&:after {
+			content: "";
+			position: absolute;
+			display: none;
+			left: 9px;
+			top: 5px;
+			width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 3px 3px 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+	}
+
+	&:hover {
+		input ~ .checkmark {
+			background-color: #ccc;
+		}
 	}
 }

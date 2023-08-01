@@ -2,11 +2,8 @@
 
 .hero {
 	position: relative;
-	display: flex;
 	padding: 7.5rem 0;
-	background-color: #222222;
-	//background-image: url("#{$images-path}/content/cover/cover-test3.png");
-	background-image: url("../../images/content/cover/cover-test3.png");
+	background-image: url("../../images/content/cover/cover-test4.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: -130px auto 0;
@@ -16,11 +13,11 @@
 		box-sizing: border-box;
 		padding: 1rem;
 		z-index: 10;
+		text-align: center;
 		&:before {
 			content: '';
 			position: absolute;
 			top: 0; left: 0; right: 0; bottom: 0;
-			
 			z-index: 9;
 		}
 	}
@@ -53,26 +50,23 @@
 	}
 
 	.hero__wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		padding: 0;
-		margin: 12rem auto 6rem;
+		margin: 6rem auto;
 	}
 
 	h1 {
 		position: relative;
 		font-size: $hero-font-size;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 1.35;
-		color: $white;
+		color: $dark-blue;
 		z-index: 10;
 		.highlight {
-			color: $blue;
+			color: $dark-blue;
 			font-weight: 700;
-			background: -webkit-linear-gradient(215deg, rgba(0,124,207,1) 0%, rgba(0,211,168,1) 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			//background: -webkit-linear-gradient(215deg, rgba(0,124,207,1) 0%, rgba(0,211,168,1) 100%);
+			//-webkit-background-clip: text;
+			//-webkit-text-fill-color: transparent;
 		}
 	}
 
@@ -81,7 +75,7 @@
 		font-size: 18px;
 		line-height: 1.6;
 		margin-bottom: 2rem;
-		color: $white;
+		color: $dark-blue;
 		font-weight: 200;
 		z-index: 10;
 	}
@@ -89,9 +83,80 @@
 	.button {
 		position: relative;
 		z-index: 10;
+		width: 160px;
+		box-sizing: border-box;
+		justify-content: center;
+		margin: 0 0.5rem;
 	}
 
 	.hero__copy {
 		margin-bottom: 2rem;
 	}
+}
+
+.hero--subpage {
+	margin: 6rem 0 3rem;
+	padding: 0;
+
+	.hero__wrapper {
+		margin-bottom: 0;
+	}
+
+	.hero__image {
+		padding: 0 1rem;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	h1 {
+		margin-bottom: 0;
+		text-align: left;
+		font-weight: bold;
+	}
+
+	.hero__iconRow {
+		display: flex;
+		justify-content: flex-start;
+		gap: 1.5rem;
+	}
+	
+	.hero__icon {
+        position: relative;
+        display: flex;
+        align-items: center;
+		justify-content: center;
+        &:before {
+            content: '';
+            display: flex;
+            margin-right: 10px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .hero__icon--location {
+        &:before {
+            background-image: url("#{$images-path}/ui/icons/location.svg");
+            width: 16px;
+            height: 24px;
+        }
+    }
+
+    .hero__icon--duration {
+        &:before {
+            background-image: url("#{$images-path}/ui/icons/calendar.svg");
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .hero__icon--price {
+        &:before {
+            background-image: url("#{$images-path}/ui/icons/coin.svg");
+            width: 20px;
+            height: 24px;
+        }
+    }
 }
