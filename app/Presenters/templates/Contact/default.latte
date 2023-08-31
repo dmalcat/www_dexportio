@@ -1,0 +1,49 @@
+{block content}
+
+<section class="hero hero--subpage">
+	<div class="hero__wrapper wrapper">
+		<div class="hero__copy">
+			<h1 n:block=title>
+				Kontakt
+			</h1>
+        </div>
+	</div>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb__wrapper wrapper">
+            <ul>
+                <li>
+                    <a n:href="Homepage:">Úvodní stránka</a>
+                </li>
+                <li>
+                    <span>Kontakt</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="articles articles--content">
+    <div class="articles__wrapper wrapper">
+        <div class="articles__block articles__block--contact">
+            <div class="contact">
+                <strong class="contact__company">Dexport s.r.o.</strong> <br><br>
+                <span class="contact__block">
+                    <address class="contact__address contact__icon">
+                        Sídlo: <br>
+                        Alšova 1570/7<br>
+                        360 01 Karlovy Vary <br>
+                        IČ: 08814244 
+                    </address>
+                </span>
+
+                <span class="contact__block">
+                    <a class="contact__email contact__icon" href="mailto:info@grandteam.cz">info@dexport.cz</a><br>
+                    <a class="contact__phone contact__icon" href="tel:+420123456789">+420&nbsp;123&nbsp;456&nbsp;789</a><br>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{include '../includes/form.latte'}

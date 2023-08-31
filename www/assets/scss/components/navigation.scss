@@ -18,7 +18,10 @@
 
 	.navigation__item--active {
 		.navigation__link {
-			text-decoration: none;
+			color: darken($green, 5%);
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -27,6 +30,9 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 600;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 

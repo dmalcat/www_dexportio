@@ -5,6 +5,11 @@ $(function() {
 		arrows: false,
 		dots: true
 	});
+	
+	$("#case-study").slick({
+		arrows: false,
+		dots: true
+	});
 
 	var scroll = new SmoothScroll('a[href*="#"]');
 

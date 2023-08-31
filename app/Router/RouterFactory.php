@@ -60,6 +60,18 @@ final class RouterFactory
 					'action' 		=> 'default',
 					'region' 		=> $region
 				]);
+
+				$router->addRoute($basePath . $region . '/o-nas', [
+					'presenter' 	=> 'About',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/kontakt', [
+					'presenter' 	=> 'Contact',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
 				
 				$router->addRoute($basePath . $region . '/pracovni-nabidky/stavba-rodinneho-domu', [
 					'presenter' 	=> 'Offers',

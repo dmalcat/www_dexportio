@@ -1,0 +1,25 @@
+.contact {
+    .contact__company {
+        font-size: 18px;
+    }
+
+    .contact__icon {
+        padding-left: 2.5rem;
+        background-repeat: no-repeat;
+        background-size: 20px auto;
+        
+    }
+
+    .contact__address {
+        font-style: normal;
+        background-image: url("#{$images-path}/ui/icons/icon-company.svg");
+    }
+
+    .contact__email {
+        background-image: url("#{$images-path}/ui/icons/icon-email.svg");
+    }
+
+    .contact__phone {
+        background-image: url("#{$images-path}/ui/icons/icon-phone.svg");
+    }
+}
