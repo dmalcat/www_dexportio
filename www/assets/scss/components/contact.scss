@@ -4,22 +4,32 @@
     }
 
     .contact__icon {
+        display: block;
         padding-left: 2.5rem;
         background-repeat: no-repeat;
         background-size: 20px auto;
-        
+        background-position: 0 5px;
+        padding: 0.25rem 0 0.25rem 2.5rem;
     }
 
     .contact__address {
         font-style: normal;
-        background-image: url("#{$images-path}/ui/icons/icon-company.svg");
+        background-image: url("#{$images-path}/ui/icons/icon-location.svg");
+        color: $dark-blue;
+        margin-bottom: 1rem;
+    }
+
+    .contact__block {
+        display: block;
+        margin-bottom: 2rem;
     }
 
     .contact__email {
-        background-image: url("#{$images-path}/ui/icons/icon-email.svg");
+        background-image: url("#{$images-path}/ui/icons/icon-mail.svg");
     }
 
     .contact__phone {
         background-image: url("#{$images-path}/ui/icons/icon-phone.svg");
+        background-size: auto 22px;
     }
 }

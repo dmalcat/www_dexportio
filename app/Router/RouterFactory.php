@@ -67,6 +67,18 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/pro-zivnostniky', [
+					'presenter' 	=> 'System',
+					'action' 		=> 'tradesman',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pro-firmy', [
+					'presenter' 	=> 'System',
+					'action' 		=> 'company',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/kontakt', [
 					'presenter' 	=> 'Contact',
 					'action' 		=> 'default',

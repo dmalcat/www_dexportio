@@ -1,24 +1,89 @@
 {block content}
 
-<section class="hero hero--subpage">
+<section class="hero hero--article">
 	<div class="hero__wrapper wrapper">
 		<div class="hero__copy">
 			<h1 n:block=title>
-				O nás
-			</h1>
+                <span class="highlight">Jsme česko-něměcká obchodní společnost</span>.
+            </h1>
+
+            <p>
+               Během naší existence jsme pomohli našim klientům vygenerovat obrat <br>
+               přes 3.7 milionu eur a navázat řadu úspěšných obchodních partnerství. 
+            </p>
+
+            <div class="hero__buttons">
+                <a href="#reference" class="button button--green">Reference</a>
+            </div>
         </div>
 	</div>
+</section>
 
-    <div class="breadcrumb">
-        <div class="breadcrumb__wrapper wrapper">
-            <ul>
-                <li>
-                    <a n:href="Homepage:">Úvodní stránka</a>
-                </li>
-                <li>
-                    <span>O nás</span>
-                </li>
-            </ul>
+<section class="article article--about" id="o-nas">
+    <div class="article__wrapper wrapper">
+        <div class="article__row row">
+            {*}
+            <div class="box box--white">
+                <h2>O projektu</h2>
+                <p>
+                    Cílem projektu Dexportio je propojovat žívnostníky a firmy <br>
+                    s obchodními příležitostmi a partnerstvími. Naše firma <br>
+                    má již 7 let zkušeností v oboru.
+                </p>
+            </div>
+            {*}
+
+            <div class="box box--white">
+                <h2>O projektu</h2>
+                <p>
+                    Náš projekt byla založen s cílem usnadnit obchodní styky mezi Českem a Německem. Máme bohaté zkušenosti s obchodními vztahy mezi těmito zeměmi a rozhodli jsme se vytvořit platformu, která by pomohla živnostníkům a firmám dosáhnout svých cílů. Během naší existence jsme pomohli našim klientům vygenerovat obrat přes 3.7 milionu eur a navázat řadu úspěšných obchodních partnerství.
+                </p>
+            </div>
+            <div class="box box--white">
+                <h2>Naše vize</h2>
+                <p>
+                    Naší vizí je pomáhat živnostníkům a firmám dosahovat svých obchodních cílů. Chceme být lídrem v oboru a neustále inovovat, aby naši klienti měli přístup k nejlepším obchodním příležitostem. Úspěchu lze dosáhnout jedině společně. 
+                </p>
+            </div>
         </div>
     </div>
 </section>
+
+<section class="quote">
+    <div class="quote__wrapper wrapper">
+        
+        <div class="quote__block">
+            <div class="quote__row">
+                <div class="quote__copy">
+                    <p>
+                        Jsme přesvědčeni, že kvalita a důvěra jsou základními pilíři úspěšných obchodních vztahů. Náš tým je tvořen lidmi s hlubokými znalostmi
+                        německého trhu a jazyka, to nám umožňuje nabízet našim klientům profesionální služby a udržovat dlouhodobé vztahy. Snažíme se být flexibilní
+                        a rychle reagovat na potřeby našich klientů, díky čemuž můžeme dosahovat výjimečných výsledků.
+                    </p>
+                    <span class="quote__signature">
+                        Martin Plch, zakladatel projektu
+                    </span>
+                </div>
+                
+                <img class="quote__photo" src="{$basePath}/assets/images/content/martin-plch.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+{include '../includes/references.latte'}
+
+<section class="contactForm" id="kontaktujte-nas">
+	<div class="contactForm__wrapper wrapper">
+		<div class="box box--form box--white">
+			<h2>
+				<span class="subheadline">Kontaktujte nás</span>
+				Domluvme si schůzku
+			</h2>
+
+			{include '../includes/form.latte'}
+			
+		</div>
+	</div>
+</section>
+

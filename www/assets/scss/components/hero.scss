@@ -94,7 +94,8 @@
 	}
 }
 
-.hero--subpage {
+.hero--subpage, 
+.hero--article {
 	margin: 6rem 0 3rem;
 	padding: 0;
 
@@ -113,9 +114,18 @@
 	h1 {
 		margin-bottom: 0;
 		text-align: left;
-		font-weight: bold;
 	}
 
+	.hero__buttons {
+		display: flex;
+		.button {
+			display: inline-block;
+			width: auto;
+		}
+	}
+}
+
+.hero--subpage {
 	.hero__iconRow {
 		display: flex;
 		justify-content: flex-start;
@@ -159,4 +169,17 @@
             height: 24px;
         }
     }
+}
+
+.hero--article {
+	padding: 2rem 0 8rem;
+	margin: 0 auto;
+	h1 {
+		margin-bottom: 3rem;
+	}
+
+	p {
+		text-align: left;
+		font-size: 22px;
+	}
 }

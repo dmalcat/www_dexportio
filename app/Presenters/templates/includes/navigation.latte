@@ -9,8 +9,11 @@
 		<li n:class="navigation__item, $presenter->isLinkCurrent('About:default') ? navigation__item--active">
 			<a class="navigation__link" n:href="About:default">O nás</a>
 		</li>
-		<li n:class="navigation__item, $presenter->isLinkCurrent('Styleguide:default') ? navigation__item--active">
-			<a class="navigation__link" n:href="Styleguide:">Náš systém</a>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('System:tradesman') ? navigation__item--active">
+			<a class="navigation__link" n:href="System:tradesman">Pro živnostníky</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('System:company') ? navigation__item--active">
+			<a class="navigation__link" n:href="System:company">Pro firmy</a>
 		</li>
 		<li n:class="navigation__item, $presenter->isLinkCurrent('Contact:default') ? navigation__item--active">
 			<a class="navigation__link" n:href="Contact:default">Kontakt</a>

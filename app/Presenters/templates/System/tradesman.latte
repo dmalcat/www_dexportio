@@ -1,0 +1,258 @@
+{block content}
+
+<section class="hero hero--article">
+	<div class="hero__wrapper wrapper">
+		<div class="hero__copy">
+			<h1 n:block=title>
+				Nebaví vás stále shánět nové zakázky? <br>
+                <span class="highlight">S námi nebudete vědět, kam dřív<span>. 
+			</h1>
+
+            <p>
+                Díky naší široké síti kontaktů napříč všemi <br>
+                obory vám seženeme zakázky v ČR nebo Německu.
+            </p>
+
+            <div class="hero__buttons">
+                <a href="#nase-sluzby" class="button button--green">Naše služby</a>
+            </div>
+        </div>
+	</div>
+</section>
+
+<section class="article" id="nase-sluzby">
+    <div class="article__wrapper wrapper">
+        <h2>Naše služby</h2>
+        <div class="services">
+            <div class="services__row">
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="{$basePath}/assets/images/ui/icons/icon-usp1.svg" alt="">
+                    </div>
+                    <h3>Síť kontaktů</h3>
+                    <p>
+                        Díky naší rozsáhlé databázi volných pracovních míst, zejména ve stavebnictví, vám nalezneme finančně zajímavou pracovní příležitost. 
+                    </p>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="{$basePath}/assets/images/ui/icons/icon-komunikace.svg" alt="">
+                    </div>
+                    <h3>Zařídíme veškerou komunikaci</h3>
+                    <p>
+                        Všechny požadavky za vás vykomunikujeme, v případě pracovní nabídky z Německa i v cizím jazyce. 
+                    </p>
+                </div>
+                <div class="services__item">
+                    <div class="services__icon">
+                        <img src="{$basePath}/assets/images/ui/icons/icon-usp2.svg" alt="">
+                    </div>
+                    <h3>Poradíme s&nbsp;papírováním</h3>
+                    <p>
+                        Smlouvy, pracovní povolení - cokoliv, co budete k výkonu práce potřebovat. 
+                    </p>
+                </div>
+            </div>
+            <div class="services__row services__row--copy">
+                <p>
+                    ...a mnoho dalšího. Domluvte si s námi schůzku, <br>
+                    kde vám naše kompletní služby rádi představíme.
+                </p>
+
+                <a href="" class="button button--green">Domluvit schůzku</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="article">
+	<div class="article__wrapper wrapper">
+        <h2>
+			<span class="subheadline">Výhody</span>
+			Konečně efektivní <br>
+            řešení pro živnostníky
+		</h2>
+
+		<p class="perex">
+			Pochopení cílů našich klientů a široké <br>
+			nabídky pracovních míst jsou naší <br>
+			osvědčenou strategií, která přináší výsledky.
+		</p>
+        
+        <div class="usp">
+            <div class="usp__row usp__row--3">
+                <div class="usp__item">
+                    <img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-naklady.svg" alt="">
+                    <h3>Bez starostí</h3>
+                    <p>
+                        Už žádné hledání nových zakázek od neprověřených klientů. Naše partnery pravidelně proveřujeme a čerpáme ze zpětné vazby živnostníků, kteří u dané firmy již pracovali. 
+                    </p>
+                </div>
+                
+                <div class="usp__item">
+                    <img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-vykon.svg" alt="">
+                    <h3>Finanční ohodnocení</h3>
+                    <p>
+                        Zejména firmy z Německa jsou schopni vaši práci náležitě finančně ohodnotit. 
+                    </p>
+                </div>
+                
+                <div class="usp__item">
+                    <img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-kontakty.svg" alt="">
+                    <h3>Flexibilita</h3>
+                    <p>
+                        Chcete krátkodobé kontrakty, nebo raději dlouhodobé? U nás si můžete vybrat, co vám vyhovuje nejvíce. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="offers offers--short">
+    <div class="offers__wrapper wrapper">
+        <h2>
+			<span class="subheadline">Nabídky</span>
+			Vaše cesta za lepší <br>
+            prací začíná zde
+		</h2>
+        <div class="offers__row">
+            <ul class="offers__list">
+                <li class="offers__item">
+                    <a class="offers__copy" n:href="Offers:detail">
+                        <h3 class="offers__headline">
+                            Stavba rodinného domu
+                        </h3>
+                        <span class="offers__desc">
+                            Hledáme zkušené pracovníky pro stavbu rodinného domu, kteří jsou připraveni přinést své odborné dovednosti a vášeň do každého detailu.
+                        </span>
+                        <span class="offers__row">
+                            <span class="offers__icon offers__icon--location">
+                                ČR
+                            </span>
+                            <span class="offers__icon offers__icon--duration">
+                                3 měsíce
+                            </span>
+                            <span class="offers__icon offers__icon--price">
+                                5 000 €/měsíc 
+                            </span>
+                        </span>
+                        <span class="offers__button">
+                            <span class="button button--green">Detail nabídky</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="offers__item">
+                    <a n:href="Offers:detail" class="offers__copy">
+                        <h3 class="offers__headline">
+                            Obchodní partner pro svoz odpadu
+                        </h3>
+                        <span class="offers__desc">
+                            Hledáme spolehlivého a efektivního partnera pro svoz odpadu, který nám pomůže udržovat čistotu a udržitelnost naší komunity.
+                        </span>
+                        <span class="offers__row">
+                            <span class="offers__icon offers__icon--location">
+                                ČR
+                            </span>
+                            <span class="offers__icon offers__icon--duration">
+                                Doba neurčitá
+                            </span>
+                        </span>
+                        <span class="offers__button">
+                            <span class="button button--green">Detail nabídky</span>
+                        </span>
+                    </a>
+                </li>
+                <li class="offers__item">
+                    <a n:href="Offers:detail" class="offers__copy">
+                        <h3 class="offers__headline">
+                            Partner pro firmu na výrobu ekolinky na zpracování odpadu
+                        </h3>
+                        <span class="offers__desc">
+                            Hledáme inovativního a spolehlivého partnera, abychom společně podpořili udržitelné a ekologické řešení odpadového hospodářství.
+                        </span>
+                        <span class="offers__row">
+                            <span class="offers__icon offers__icon--location">
+                                Evropa
+                            </span>
+                        </span>
+                        <span class="offers__button">
+                            <span class="button button--green">Detail nabídky</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a n:href="Offers:default" class="offers__link">Všechny nabídky</a>
+    </div>
+</section>
+
+<section class="caseStudy">
+	<div class="caseStudy__wrapper wrapper">
+		<h2>
+			<span class="subheadline">Reference</span>
+			Příběhy živnostníků, <br> kteří nám věří
+		</h2>
+		
+		<div class="caseStudy__row row" id="case-study">
+			<div class="caseStudy__item">
+				<div class="caseStudy__inner">
+					<div class="caseStudy__col caseStudy__col--image">
+						<img src="{$basePath}/assets/images/content/caseStudy/lisa-tech.png" alt="">
+					</div>
+					<div class="caseStudy__col caseStudy__col--copy">
+						<h3>Jan Novák</h3>
+
+						<p>
+							"V roce 2021 jsem si přes Dexportio našel práci ve stavebnictví v Německu zhruba 50 kilometrů od hranic. Měl jsem strach, že když neumím jazyk, nebude o mě v Německu zájem. Dexportio se postaralo o všechno papírování včetně pracovncích povolení a našlo mi učitele němčiny, který mě naučil to nutné, co v práci potřebuju. 
+                        </p>
+
+						<p>
+							Finančně se to nedá s Českem srovnat. Vydělám dvakrát tolik, než jsem byl schopný vydělat v Čechách. O náklady na dopravu se dělíme s kolegou, kterému jsem zprostředkoval práci pro stejnou firmu. Firma nám nabídla i možnost ubytování."
+						</p>
+                    </div>
+				</div>
+			</div>
+			<div class="caseStudy__item">
+				<div class="caseStudy__inner">
+					<div class="caseStudy__col caseStudy__col--image">
+						<img src="{$basePath}/assets/images/content/caseStudy/lisa-tech.png" alt="">
+					</div>
+					<div class="caseStudy__col caseStudy__col--copy">
+						<h3>Lisa Tech</h3>
+
+						<p>
+							Se společností Lisa Tech jsme navázali obchodní spolupráci při prodeji jejich hlavního produktu - ekologické linky na zpracování odpadu. 
+						</p>
+
+						<p>
+							Sestavili jsme marketingový plán, ve kterém jsme zdůraznili výhody ekologické linky, jako je snížení energetických nákladů, optimalizace provozních procesů a zlepšení ekologického profilu zákazníků. Poté jsme aktivně oslovili až 40 firem měsíčně, prezentovali jim výhody produktu a provedli demonstrace našich referenčních případů.
+						</p>
+
+						<p>
+							Během prvního roku jsme úspěšně prodali ekologickou linku 3 novým zákazníkům. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row row--button row--center">
+			<a class="button button--green" href="">Všechny studie</a>
+		</div>
+	</div>
+</section>
+
+<section class="contactForm" id="kontaktujte-nas">
+	<div class="contactForm__wrapper wrapper">
+		<div class="box box--form box--white">
+			<h2>
+				<span class="subheadline">Kontaktujte nás</span>
+				Domluvme si schůzku
+			</h2>
+
+			{include '../includes/form.latte'}
+			
+		</div>
+	</div>
+</section>

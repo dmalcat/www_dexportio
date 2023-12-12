@@ -30,20 +30,38 @@
                 <strong class="contact__company">Dexport s.r.o.</strong> <br><br>
                 <span class="contact__block">
                     <address class="contact__address contact__icon">
-                        Sídlo: <br>
+                        <strong>Sídlo</strong>: <br>
                         Alšova 1570/7<br>
                         360 01 Karlovy Vary <br>
-                        IČ: 08814244 
+                        IČ: 08814244 <br>
+                        DIČ: CZ08814244
                     </address>
                 </span>
 
                 <span class="contact__block">
-                    <a class="contact__email contact__icon" href="mailto:info@grandteam.cz">info@dexport.cz</a><br>
-                    <a class="contact__phone contact__icon" href="tel:+420123456789">+420&nbsp;123&nbsp;456&nbsp;789</a><br>
+                    <a class="contact__email contact__icon" href="mailto:info@grandteam.cz">info@dexport.cz</a>
+                    <a class="contact__phone contact__icon" href="tel:+420123456789">+420&nbsp;123&nbsp;456&nbsp;789</a>
                 </span>
+
+                <p class="contact__legal">
+                    Společnost je zapsána v obchodním rejstříku vedeném <br>
+                    u krajského soudu v Plzni, oddílu C vložce 38814/KSPL.
+                </p>
             </div>
         </div>
     </div>
 </section>
 
-{include '../includes/form.latte'}
+<section class="contactForm" id="kontaktujte-nas">
+	<div class="contactForm__wrapper wrapper">
+		<div class="box box--form box--white">
+			<h2>
+				<span class="subheadline">Kontaktujte nás</span>
+				Domluvme si schůzku
+			</h2>
+
+			{include '../includes/form.latte'}
+			
+		</div>
+	</div>
+</section>

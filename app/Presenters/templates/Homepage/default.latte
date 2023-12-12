@@ -15,8 +15,8 @@
 			</p>
 
 			<div class="hero__buttons">
-				<a n:href="Offers:" class="button button--green">Zaměstnanci</a>
-				<a n:href="Offers:" class="button button--green">Firmy</a>
+				<a n:href="System:tradesman" class="button button--green">Živnostníci</a>
+				<a n:href="System:company" class="button button--green">Firmy</a>
 			</div>
 		</div>
 	</div>
@@ -98,128 +98,7 @@
 
 {include '../includes/about.latte'}
 
-{*}
-<section class="usp">
-	<div class="usp__wrapper wrapper">
-		<h2>
-			<span class="subheadline">Výhody</span>
-			Obchodní strategie <br>
-			pro skutečné výsledky
-		</h2>
-
-		<p class="perex">
-			Pochopení cílů našich klientů a jedinečné <br>
-			nabídky potencionálních zákazníků jsou naší <br>
-			osvědčenou strategií, která přináší výsledky.
-		</p>
-
-		<div class="usp__row">
-			<div class="usp__item">
-				<img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-naklady.svg" alt="">
-				<h3>Snížení nákladů</h3>
-				<p>
-					Díky externímu obchodnímu oddělení snížíte náklady na obchodni tým až 60%.
-				</p>
-			</div>
-			
-			<div class="usp__item">
-				<img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-vykon.svg" alt="">
-				<h3>Zlepšení výkonnosti</h3>
-				<p>
-					Zaměřujeme se pouze na obchodní růst a úspěch.
-				</p>
-			</div>
-			
-			<div class="usp__item">
-				<img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-kontakty.svg" alt="">
-				<h3>Rozšíření sítě kontaktů</h3>
-				<p>
-					Máme širokou síť kontaktů a potenciálních klientů.
-				</p>
-			</div>
-			<div class="usp__item">
-				<img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-flexibilita.svg" alt="">
-				<h3>Flexibilita</h3>
-				<p>
-					Umíme se rychle přizpůsobit různým situacím a požadavkům klienta.
-				</p>
-			</div>
-			<div class="usp__item">
-				<img class="usp__icon" src="{$basePath}/assets/images/ui/icons/icon-vysledky.svg" alt="">
-				<h3>Důraz na výsledky</h3>
-				<p>
-					Soustředíme se na výsledky a úspěch v obchodování, zvyšování tržeb a růst.
-				</p>
-			</div>
-		</div>
-
-		<div class="row row--center">
-			<a class="button button--gradient" href="">Více o výhodách</a>
-		</div>
-	</div>
-</section>
-{*}
-
-
-<section class="caseStudy">
-	<div class="caseStudy__wrapper wrapper">
-		<h2>
-			{*<span class="subheadline">Case studies</span>*}
-			Příběhy firem, <br> které nám věří
-		</h2>
-		
-		<div class="caseStudy__row row" id="case-study">
-			<div class="caseStudy__item">
-				<div class="caseStudy__inner">
-					<div class="caseStudy__col caseStudy__col--image">
-						<img src="{$basePath}/assets/images/content/caseStudy/lisa-tech.png" alt="">
-					</div>
-					<div class="caseStudy__col caseStudy__col--copy">
-						<h3>Lisa Tech</h3>
-
-						<p>
-							Se společností Lisa Tech jsme navázali obchodní spolupráci při prodeji jejich hlavního produktu - ekologické linky na zpracování odpadu. 
-						</p>
-
-						<p>
-							Sestavili jsme marketingový plán, ve kterém jsme zdůraznili výhody ekologické linky, jako je snížení energetických nákladů, optimalizace provozních procesů a zlepšení ekologického profilu zákazníků. Poté jsme aktivně oslovili až 40 firem měsíčně, prezentovali jim výhody produktu a provedli demonstrace našich referenčních případů.
-						</p>
-
-						<p>
-							Během prvního roku jsme úspěšně prodali ekologickou linku 3 novým zákazníkům. 
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="caseStudy__item">
-				<div class="caseStudy__inner">
-					<div class="caseStudy__col caseStudy__col--image">
-						<img src="{$basePath}/assets/images/content/caseStudy/lisa-tech.png" alt="">
-					</div>
-					<div class="caseStudy__col caseStudy__col--copy">
-						<h3>Lisa Tech</h3>
-
-						<p>
-							Se společností Lisa Tech jsme navázali obchodní spolupráci při prodeji jejich hlavního produktu - ekologické linky na zpracování odpadu. 
-						</p>
-
-						<p>
-							Sestavili jsme marketingový plán, ve kterém jsme zdůraznili výhody ekologické linky, jako je snížení energetických nákladů, optimalizace provozních procesů a zlepšení ekologického profilu zákazníků. Poté jsme aktivně oslovili až 40 firem měsíčně, prezentovali jim výhody produktu a provedli demonstrace našich referenčních případů.
-						</p>
-
-						<p>
-							Během prvního roku jsme úspěšně prodali ekologickou linku 3 novým zákazníkům. 
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row row--button row--center">
-			<a class="button button--green" href="">Všechny studie</a>
-		</div>
-	</div>
-</section>
+{include '../includes/references.latte'}
 
 {*}
 <section class="packages">
@@ -316,6 +195,7 @@
 				Domluvme si schůzku
 			</h2>
 
+			{include '../includes/form.latte'}
 			
 		</div>
 	</div>

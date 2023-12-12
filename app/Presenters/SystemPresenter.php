@@ -7,6 +7,6 @@ namespace Dexportio\Presenters;
 use Nette;
 
 
-final class PackagesPresenter extends BasePresenter
+final class SystemPresenter extends BasePresenter
 {
 }

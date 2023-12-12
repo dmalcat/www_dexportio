@@ -1,0 +1,63 @@
+@import '../config';
+
+.quote {
+    .quote__block {
+        position: relative;
+        padding: 6rem 3rem;
+        border: 2px solid #d3d3d3;
+        box-shadow: 0 0 20px 1px rgba(0,0,0,.15);
+        background-color: transparent;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        &:before {
+            left: 3rem;
+            top: -20px;
+            background-image: url("#{$images-path}/ui/icons/icon-quotes.svg");
+            
+        }
+
+        &:after {
+            right: 3rem;
+            bottom: -20px;
+            background-image: url("#{$images-path}/ui/icons/icon-quotes.svg");
+            transform: rotate(180deg);
+        }
+    }
+
+    .quote__row {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .quote__photo {
+        display: block;
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .quote__copy {
+        display: block;
+        padding-right: 10rem;
+        width: 60%;
+        p {
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .quote__signature {
+        display: block;
+        font-weight: bold;
+        color: $dark-blue;
+    }
+}

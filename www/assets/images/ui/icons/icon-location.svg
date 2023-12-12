@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="16px" height="24px" viewBox="0 0 16 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>iconmonstr-location-pin-thin</title>
-    <defs>
-        <filter id="filter-1">
-            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.827451 0 0 0 0 0.658824 0 0 0 1.000000 0"></feColorMatrix>
-        </filter>
-    </defs>
+    <title>icon-location</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g filter="url(#filter-1)" id="iconmonstr-location-pin-thin">
-            <g>
-                <path d="M8,10 C6.896,10 6,9.104 6,8 C6,6.896 6.896,6 8,6 C9.104,6 10,6.896 10,8 C10,9.104 9.104,10 8,10 M8,5 C6.343,5 5,6.343 5,8 C5,9.657 6.343,11 8,11 C9.657,11 11,9.657 11,8 C11,6.343 9.657,5 8,5 M1,7.602 C1,4.085 4.271,1 8,1 C11.729,1 15,4.085 15,7.602 C15,11.057 12.437,15.145 8,22.129 C3.511,15.056 1,11.057 1,7.602 M8,0 C3.802,0 0,3.403 0,7.602 C0,11.8 3.469,16.812 8,24 C12.531,16.812 16,11.8 16,7.602 C16,3.403 12.199,0 8,0" id="Shape" fill="#000000"></path>
-            </g>
+        <g id="icon-location" fill="#00BA94" fill-rule="nonzero">
+            <path d="M8,10 C6.896,10 6,9.104 6,8 C6,6.896 6.896,6 8,6 C9.104,6 10,6.896 10,8 C10,9.104 9.104,10 8,10 M8,5 C6.343,5 5,6.343 5,8 C5,9.657 6.343,11 8,11 C9.657,11 11,9.657 11,8 C11,6.343 9.657,5 8,5 M1,7.602 C1,4.085 4.271,1 8,1 C11.729,1 15,4.085 15,7.602 C15,11.057 12.437,15.145 8,22.129 C3.511,15.056 1,11.057 1,7.602 M8,0 C3.802,0 0,3.403 0,7.602 C0,11.8 3.469,16.812 8,24 C12.531,16.812 16,11.8 16,7.602 C16,3.403 12.199,0 8,0" id="Shape"></path>
         </g>
     </g>
 </svg>
